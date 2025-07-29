@@ -1,0 +1,99 @@
+html {
+    font-size: 62.5%;
+}
+
+@media (max-width: 1202px) {
+    html {
+        font-size: 0.8319467554vw;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 1.30208333333vw;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 2.17391304348vw;
+    }
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--body-color);
+    word-break: keep-all;
+    height: auto;
+    overflow-x: hidden;
+}
+
+.point {
+    font-weight: 700;
+    color: var(--pri-color) !important;
+}
+
+.inner {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 8rem 0;
+    height: 100%;
+}
+
+.itm {
+    position: relative;
+    height: 100vh;
+    height: 100svh;
+    background: #000;
+}
+
+.pf .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pf .tit p {
+    margin: 0 0 1.6rem 0;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 300;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.pf .tit h2 {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 6.4rem;
+    line-height: 7.2rem;
+    overflow: hidden;
+}
+
+.pf .tit p>span,
+.pf .tit h2>span {
+    display: inline-block;
+    transform: translate(0, 100%);
+    transition: var(--transition-1s);
+}
+
+.pf.on .tit p>span,
+.pf.on .tit h2>span {
+    display: inline-block;
+    transform: translate(0, 0);
+    transition: var(--transition-1s);
+}
+
+.mouse-default {
+    z-index: 99999;
+    position: fixed;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    pointer-events: none;
+    background: var(--pri-color);
+}

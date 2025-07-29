@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- https://codepen.io/urbgimtam/pen/XWXdypQ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis"></script>
+    <script src="./js/three.min.js"></script>
+    <script src="./js/vanta.waves.min.js"></script>
+
+    <script src="./js/custom.js" defer></script>
+</head>
+
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <h1>2025 portfolio</h1>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="itm itm_intro">
+            <div class="tit">
+                <h2>
+                    <span>
+                        <span style="--variable-index: 0;">L</span>
+                        <span style="--variable-index: 1;">e</span>
+                        <span style="--variable-index: 2;">s</span>
+                        <span style="--variable-index: 3;">s</span>
+                        &nbsp
+                        <span style="--variable-index: 4;">c</span>
+                        <span style="--variable-index: 5;">l</span>
+                        <span style="--variable-index: 6;">u</span>
+                        <span style="--variable-index: 7;">t</span>
+                        <span style="--variable-index: 8;">t</span>
+                        <span style="--variable-index: 9;">e</span>
+                        <span style="--variable-index: 10;">r</span>
+                    </span>
+                    <br />
+                    <span>
+                        <span style="--variable-index: 0;">m</span>
+                        <span style="--variable-index: 1;">o</span>
+                        <span style="--variable-index: 2;">r</span>
+                        <span style="--variable-index: 3;">e</span>
+                        &nbsp
+                        <span style="--variable-index: 4;">c</span>
+                        <span style="--variable-index: 5;">l</span>
+                        <span style="--variable-index: 6;">a</span>
+                        <span style="--variable-index: 7;">r</span>
+                        <span style="--variable-index: 8;">i</span>
+                        <span style="--variable-index: 9;">t</span>
+                        <span style="--variable-index: 10;">y</span>
+                        <span style="--variable-index: 11;" class="point">.</span>
+                    </span>
+                </h2>
+                <p>누구나 쉽게 이용하고 머무르고 싶은 깔끔한 사이트를 만듭니다.</p>
+            </div>
+
+            <div class="scroll_down">
+
+            </div>
+
+            <div id="vanta_bg"></div>
+        </section>
+
+
+        <section class="itm pf pf01">
+            <div class="inner">
+                <div class="bg">
+                    <div class="tit">
+                        <p><span>renewal web</span></p>
+                        <h2><span>경희대학교</span></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="itm pf pf02">
+            <div class="inner">
+                <div class="tit">
+                    <p><span>renewal web</span></p>
+                    <h2><span>신성이앤지</span></h2>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="itm pf pf03">
+            <div class="inner">
+                <div class="tit">
+                    <p><span>renewal web</span></p>
+                    <h2><span>밝은성모안과</span></h2>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="itm pf itm_work_list">
+            <div class="inner">
+                <div class="list_wrap">
+                    <div class="tit">
+                        <p><span>renewal web</span></p>
+                        <h2><span>실무 프로젝트</span></h2>
+                    </div>
+
+                    <div class="work_list">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <div class="num">01</div>
+                                    <div class="txt_box">
+                                        <strong class="subject">투비오파트너스</strong>
+                                        <ul class="desc">
+                                            <li>그누보드 기반</li>
+                                            <li>기여도 100%</li>
+                                            <li>디자인 90%</li>
+                                        </ul>
+                                    </div>
+                                    <div class="more_btn">
+                                        <button>more</button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="num">02</div>
+                                    <div class="txt_box">
+                                        <strong class="subject">코닥미니샷</strong>
+                                        <ul class="desc">
+                                            <li>카페24 템플릿 기반</li>
+                                            <li>기여도 100%</li>
+                                            <li>디자인 0%</li>
+                                        </ul>
+                                    </div>
+                                    <div class="more_btn">
+                                        <button>more</button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="num">03</div>
+                                    <div class="txt_box">
+                                        <strong class="subject">엔더슨벨</strong>
+                                        <ul class="desc">
+                                            <li>카페24 템플릿 기반</li>
+                                            <li>기여도 100%</li>
+                                            <li>디자인 0%</li>
+                                        </ul>
+                                    </div>
+                                    <div class="more_btn">
+                                        <button>more</button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="num">04</div>
+                                    <div class="txt_box">
+                                        <strong class="subject">세오로보틱스</strong>
+                                        <ul class="desc">
+                                            <li>그누보드 기반</li>
+                                            <li>기여도 50%</li>
+                                            <li>디자인 0%</li>
+                                        </ul>
+                                    </div>
+                                    <div class="more_btn">
+                                        <button>more</button>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <div class="num">05</div>
+                                    <div class="txt_box">
+                                        <strong class="subject">오겡끼데스까</strong>
+                                        <ul class="desc">
+                                            <li>랜딩페이지</li>
+                                            <li>기여도 100%</li>
+                                            <li>디자인 100%</li>
+                                        </ul>
+                                    </div>
+                                    <div class="more_btn">
+                                        <button>more</button>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="itm itm_footer">
+            <div class="inner">
+                profile
+            </div>
+        </section>
+
+
+    </main>
+
+    <div class="mouse-default"></div>
+
+    <div id="to_top">
+        TOP
+    </div>
+
+    <div id="cover_ani">
+        <div class="txt_box">
+            <p><span>2025 bys</span></p>
+            <p><span>Portfolio<span class="point">.</span></span></p>
+        </div>
+    </div>
+</body>
+
+</html>
